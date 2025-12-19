@@ -337,7 +337,7 @@ main.sales-container {
   padding: 10px 0; 
   font-size: 22px;
 }
-.div1{
+.frase-final .highlight, .div1{
   background-color: #f5b301;
   color: #113b64;
   padding: 5px 40px; 
@@ -348,7 +348,7 @@ main.sales-container {
   font-weight: 900;
   transition: background-color 0.2s;
 }
-.div1:hover {
+.frase-final .highlight:hover, .div1:hover {
   background-color: #e8a800;
 }
 
@@ -525,18 +525,18 @@ main.sales-container {
 
   /* --- FOOTER MÓVIL  --- */
   .mensaje-final { 
-    font-size: 8px; 
+    font-size: 14px; 
     padding: 0 15px; 
     margin: 10px auto; 
     background-color: transparent; 
   }
   .frase-final { 
     font-size: 18px; 
-    padding: 15px; 
+    padding: 15px 10px; 
     line-height: 1.4;
   }
-  .div1{ 
-    padding: 6px 25px; 
+  .frase-final .highlight, .div1{ 
+    padding: 6px 20px; 
     font-size: 18px;
     margin-top: 0px;
     font-weight: 900;

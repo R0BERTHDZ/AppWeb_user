@@ -302,13 +302,13 @@ section.info {
   background-color: #113b64; 
   color: white;
   font-weight: 800;
-  padding: 15px 0; /* Altura reducida (antes 25px) */
+  padding: 10px 0; 
   font-size: 22px;
 }
-.div1{
+.frase-final .highlight, .div1{
   background-color: #f5b301;
   color: #113b64;
-  padding: 8px 40px; 
+  padding: 5px 40px; 
   border-radius: 8px;
   display: inline-block;
   font-size: 20px;
@@ -316,7 +316,7 @@ section.info {
   font-weight: 900;
   transition: background-color 0.2s;
 }
-.div1:hover {
+.frase-final .highlight:hover, .div1:hover {
   background-color: #e8a800;
 }
 
@@ -553,7 +553,7 @@ section.info {
      font-weight: 700;
      margin: 10px auto; 
      padding: 0 15px; 
-     font-size: 8px; 
+     font-size: 14px; 
      background: none;
   }
   
@@ -562,12 +562,12 @@ section.info {
     background-color: #113b64; 
     color: white; 
     font-weight: 800; 
-    padding: 15px; 
+    padding: 15px 10px; 
     font-size: 18px; 
     line-height: 1.4; 
   }
-  div1{ 
-    padding: 6px 25px; 
+  .frase-final .highlight, .div1{ 
+    padding: 6px 20px; 
     font-size: 18px;
     margin-top: 0px;
     font-weight: 900;
