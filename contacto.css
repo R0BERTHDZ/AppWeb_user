@@ -349,7 +349,6 @@ main {
     top: 100px; 
     left: auto;
     right: 0; 
-    bottom: 0;
     width: 60%; 
     height: auto; /* 1. Altura automática */
     max-height: none; /* 2. Sin altura máxima */
