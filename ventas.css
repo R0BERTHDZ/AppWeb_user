@@ -4,6 +4,7 @@
 
 html {
   height: 100%;
+  width: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -19,7 +20,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100%;
 
+  position: relative;
   overflow-x: hidden;
 }
 
@@ -334,7 +337,7 @@ main.sales-container {
   padding: 10px 0; 
   font-size: 22px;
 }
-div1{
+.div1{
   background-color: #f5b301;
   color: #113b64;
   padding: 5px 40px; 
@@ -345,7 +348,7 @@ div1{
   font-weight: 900;
   transition: background-color 0.2s;
 }
-div1:hover {
+.div1:hover {
   background-color: #e8a800;
 }
 
@@ -378,10 +381,11 @@ div1:hover {
   
   .menu {
     display: block; 
-    position: absolute;
+    position: fixed;
     top: 100px; 
     left: auto;
     right: 0; 
+    bottom: 0;
     width: 60%;  
     height: auto; 
     max-height: none; 
@@ -531,7 +535,7 @@ div1:hover {
     padding: 15px; 
     line-height: 1.4;
   }
-  div1{ 
+  .div1{ 
     padding: 6px 25px; 
     font-size: 18px;
     margin-top: 0px;
