@@ -377,14 +377,15 @@ main.faq-container {
   .menu {
     display: block; 
     position: fixed;
-    top: 74px; 
+    top: 100px; 
     left: auto;
     right: 0; 
     width: 60%; 
+    height: auto;
     
     background-color: #113b64; 
     z-index: 1000; 
-    border-radius: 0 0 0 12px; /* Redondeo solo abajo/izquierda */
+    border-radius: 12px; 
     border-left: 2px solid #f5b301; 
     box-shadow: -8px 8px 25px rgba(0, 0, 0, 0.8); 
     
@@ -423,10 +424,23 @@ main.faq-container {
     text-align: left; 
     display: block;
     width: 100%;
-    padding: 15px; /* Reducido para móvil */
+    padding: 25px 15px; 
     border-radius: 0;
     box-shadow: none;
     box-sizing: border-box; 
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+
+  .menu a:hover {
+    background-color: #f5b301; 
+    color: #113b64;
+    box-shadow: none;
+  }
+
+  .menu a.active {
+    background-color: #f5b301; 
+    color: #113b64;
+    font-weight: 900;
   }
   
   /* Título "Conócenos" móvil */
