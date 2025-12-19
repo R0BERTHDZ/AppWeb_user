@@ -550,7 +550,7 @@ section.info {
      text-align: center;
      color: #113b64;
      font-weight: 700;
-     margin: 10px auto; 
+     margin: 5px auto; 
      padding: 0 15px; 
      font-size: 14px; 
      background: none;
@@ -561,12 +561,12 @@ section.info {
     background-color: #113b64; 
     color: white; 
     font-weight: 800; 
-    padding: 15px 10px; 
+    padding: 10px 5px; 
     font-size: 18px; 
     line-height: 1.4; 
   }
   .frase-final .highlight, .div1, div1{ 
-    padding: 6px 20px; 
+    padding: 4px 20px; 
     font-size: 18px;
     margin-top: 0px;
     font-weight: 900;

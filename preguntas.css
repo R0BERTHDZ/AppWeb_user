@@ -507,14 +507,14 @@ main.faq-container {
   .mensaje-final { 
     font-size: 14px; /* Aumentado de 8px a 14px para legibilidad */
     padding: 0 15px; 
-    margin: 10px auto; 
+    margin: 5px auto; 
   }
   .frase-final { 
     font-size: 18px; 
-    padding: 15px 10px; 
+    padding: 10px 5px; 
   }
   .frase-final .highlight { /* Usa la clase highlight corregida */
-    padding: 6px 20px; 
+    padding: 4px 20px; 
     font-size: 18px;
   }
 
