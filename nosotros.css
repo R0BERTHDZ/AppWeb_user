@@ -3,6 +3,7 @@
 ========================================================== */
 html {
   height: 100%;
+  width: 100%;
   overflow-x: hidden; 
   box-sizing: border-box;
 }
@@ -18,6 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
   width: 100%; 
 }
 
@@ -257,7 +259,7 @@ main .parrafo-inferior {
   padding: 10px 0; 
   font-size: 22px;
 }
-div1{
+.div1{
   background-color: #f5b301;
   color: #113b64;
   padding: 5px 40px; 
@@ -268,7 +270,7 @@ div1{
   font-weight: 900;
   transition: background-color 0.2s;
 }
-div1:hover {
+.div1:hover {
   background-color: #e8a800;
 }
 
@@ -301,10 +303,11 @@ div1:hover {
 /* --- MENÚ: Despliegue Suave  --- */
   .menu {
     display: block; 
-    position: absolute;
+    position: fixed;
     top: 100px; 
     left: auto;
     right: 0; 
+    bottom: 0;
     width: 60%; 
     
     height: auto; 
