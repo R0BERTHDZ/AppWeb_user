@@ -297,13 +297,13 @@ main {
   background-color: #113b64;
   color: white;
   font-weight: 800;
-  padding: 10px 0; /* Menos alto */
+  padding: 10px 0; 
   font-size: 22px;
 }
-.div1{
+.frase-final .highlight { 
   background-color: #f5b301;
   color: #113b64;
-  padding: 5px 40px; /* Menos alto */
+  padding: 5px 40px; 
   border-radius: 8px;
   display: inline-block;
   font-size: 20px;
@@ -311,7 +311,7 @@ main {
   font-weight: 900;
   transition: background-color 0.2s;
 }
-.div1:hover {
+.frase-final .highlight:hover {
   background-color: #e8a800;
 }
 
