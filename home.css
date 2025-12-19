@@ -565,7 +565,7 @@ section.info {
     font-size: 18px; 
     line-height: 1.4; 
   }
-  .frase-final .highlight, .div1{ 
+  .frase-final .highlight, .div1, div1{ 
     padding: 6px 20px; 
     font-size: 18px;
     margin-top: 0px;
