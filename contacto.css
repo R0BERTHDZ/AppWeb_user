@@ -288,7 +288,7 @@ main {
   font-weight: 700;
   margin: 40px auto;
   padding: 0 10%;
-  font-size: 18px;
+  font-size: 14px;
   background: none; 
 }
 
@@ -459,7 +459,7 @@ main {
 
   /* --- FOOTER MÓVIL  --- */
   .mensaje-final { 
-    font-size: 13px; 
+    font-size: 12px; 
     padding: 0 15px; 
     margin: 0 auto 10px; 
     background-color: transparent; 
