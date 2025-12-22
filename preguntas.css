@@ -505,17 +505,20 @@ main.faq-container {
 
   /* --- FOOTER MÓVIL --- */
   .mensaje-final { 
-    font-size: 14px; /* Aumentado de 8px a 14px para legibilidad */
+    font-size: 13px; 
     padding: 0 15px; 
-    margin: 5px auto; 
+    margin: 0 auto 10px; 
+    text-align: justify;
+    line-height: 1.0;
   }
   .frase-final { 
-    font-size: 18px; 
-    padding: 10px 5px; 
+    font-size: 15px; 
+    padding: 2px 0; 
+    line-height: 1.2;
   }
   .frase-final .highlight { /* Usa la clase highlight corregida */
-    padding: 4px 20px; 
-    font-size: 18px;
+    padding: 1px 20px; 
+    font-size: 15px;
   }
 
 } /* --- FIN DEL @media query --- */

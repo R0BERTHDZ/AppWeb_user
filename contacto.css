@@ -459,19 +459,21 @@ main {
 
   /* --- FOOTER MÓVIL  --- */
   .mensaje-final { 
-    font-size: 14px; 
+    font-size: 13px; 
     padding: 0 15px; 
-    margin: 5px auto; 
+    margin: 0 auto 10px; 
     background-color: transparent; 
+    text-align: justify;
+    line-height: 1.0;
   }
   .frase-final { 
-    font-size: 18px; 
-    padding: 10px 5px; 
-    line-height: 1.4;
+    font-size: 15px; 
+    padding: 2px 0; 
+    line-height: 1.2;
   }
   .frase-final .highlight, .div1, div1 { 
-    padding: 4px 20px; 
-    font-size: 18px;
+    padding: 1px 20px; 
+    font-size: 15px;
     margin-top: 0px;
     font-weight: 900;
   }
