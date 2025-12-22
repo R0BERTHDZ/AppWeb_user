@@ -325,7 +325,7 @@ main.sales-container {
   font-weight: 700;
   margin: 40px auto;
   padding: 0 10%;
-  font-size: 14px;
+  font-size: 12px;
   background: none; 
 }
 
@@ -524,7 +524,7 @@ main.sales-container {
 
   /* --- FOOTER MÓVIL  --- */
   .mensaje-final { 
-    font-size: 12px; 
+    font-size: 11px; 
     padding: 0 15px; 
     margin: 0 auto 10px; 
     background-color: transparent; 
