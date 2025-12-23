@@ -300,6 +300,16 @@ main.faq-container {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     line-height: 1.5;
+    text-align: justify;
+}
+
+/* Estilo para el texto resaltado por la IA */
+.ia-highlight {
+    color: #113b64;
+    font-weight: 900;
+    background-color: rgba(245, 179, 1, 0.25); /* Fondo amarillo sutil */
+    padding: 0 4px;
+    border-radius: 4px;
 }
 
 /* Animación simple */

@@ -44,28 +44,28 @@ document.addEventListener('DOMContentLoaded', () => {
         // --- 1. LISTA DE ARTÍCULOS (Máxima Especificidad) ---
         // Puntuación alta por las palabras de intención ("cosas", "puedo")
         "artículos_a_empeñar": {
-            keywords: ['cosas puedo', 'que puedo', 'reciben', 'lista', 'articulos', 'aceptan', 'empeñar', 'empenar'],
-            response: "Puedes empeñar una amplia gama de artículos de valor. Las categorías principales son: **Joyería** (oro, plata, diamantes), **Electrónicos** (celulares, laptops, consolas de modelos recientes), **Automóviles** (autos, camionetas y motos) y **Relojes de Alta Gama** (lujo). Cada artículo requiere su propia valuación y documentación."
+            keywords: ['que cosas', 'que puedo empeñar', 'que reciben', 'lista articulos', 'que aceptan', 'objetos aceptados', 'tipo de articulos', 'herramientas', 'instrumentos', 'electrodomesticos', 'bicicletas', 'relojes'],
+            response: "Puedes empeñar: **Joyería** (oro, plata), **Electrónicos** (celulares, laptops, consolas, TVs), **Herramientas** de marca, **Instrumentos Musicales**, **Electrodomésticos** pequeños, **Bicicletas** y **Automóviles**. Todo depende del estado físico y funcionamiento."
         },
 
         // --- 2. CONCEPTO FUNDAMENTAL ---
         // Puntuación media. Debería ganar solo si la pregunta no es sobre la lista.
         "empeño": {
-            keywords: ['empeño', 'empeno', 'prestamo prendario', 'funciona', 'definicion', 'concepto'],
-            response: "Un **Empeño** es un préstamo prendario: nos dejas un artículo de valor (la 'prenda') como garantía (joyas, electrónicos, autos) y a cambio te damos una cantidad de dinero. Puedes recuperar tu artículo al liquidar el préstamo (capital más intereses) dentro del plazo acordado. Es una solución financiera rápida sin revisión de Buró de Crédito."
+            keywords: ['que es un empeño', 'como funciona', 'prestamo prendario', 'definicion empeño', 'concepto empeño', 'quiero empeñar', 'proceso'],
+            response: "Un **Empeño** es un préstamo inmediato dejando una garantía. 1. Traes tu artículo. 2. Lo valuamos. 3. Te decimos cuánto te prestamos. 4. Firmas contrato y recibes tu dinero al instante. Sin aval ni Buró de Crédito."
         },
         
         // --- 3. REFRENDO (Soluciona Falla de Imagen 2) ---
         // Esta palabra clave específica DEBE ganar la puntuación cuando está presente.
         "refrendo": {
-            keywords: ['refrendo', 'renovar', 'prorroga', 'extender', 'plazo', 'refrendar'],
-            response: "El **Refrendo** es la renovación de tu contrato. Pagas solo los intereses y cargos acumulados, y el plazo se extiende por otro periodo de 30 días, permitiéndote conservar tu artículo sin liquidarlo."
+            keywords: ['refrendo', 'renovar contrato', 'prorroga', 'extender plazo', 'refrendar', 'pagar refrendo', 'costo refrendo', 'pagar interes', 'mas tiempo'],
+            response: "El **Refrendo** te da más tiempo. Pagando solo los intereses de tu contrato, extiendes el plazo por otros 30 días. Puedes refrendar las veces que necesites para no perder tu prenda."
         },
         
         // --- 4. Resto de Conceptos Financieros y Legales ---
         "avaluo": {
-            keywords: ['avaluacion', 'avaluo', 'valora', 'valuacion', 'determinar', 'valor'],
-            response: "La **Valuación o Avalúo** es la determinación del valor comercial actual de tu artículo en el mercado. Es gratuita, se realiza con base en el precio de reventa y el estado físico, y toma de 15 a 20 minutos."
+            keywords: ['avaluacion', 'avaluo', 'cuanto me dan', 'cuanto prestan', 'valor de mi', 'cotizar', 'cotizacion', 'precio oro', 'cuanto vale'],
+            response: "La **Valuación** es gratuita. Nuestros expertos revisan tu artículo (estado, modelo, marca, metal) y te ofrecen un préstamo basado en su valor comercial actual. ¡Tráelo para una cotización exacta!"
         },
         "desempeño": {
             keywords: ['desempeño', 'desempeno', 'liquidar', 'recuperar', 'pago total', 'retirar articulo'],
@@ -92,8 +92,8 @@ document.addEventListener('DOMContentLoaded', () => {
             response: "La **Prenda** es el bien de valor que dejas como garantía física. Una vez que realizas el desempeño (liquidación total), la prenda te es devuelta en el mismo estado en que la dejaste."
         },
         "boleta": {
-            keywords: ['boleta', 'contrato', 'terminos', 'ticket', 'perdi la boleta'],
-            response: "La **Boleta de Empeño** es tu contrato legal. Es indispensable para cualquier trámite (refrendo o desempeño) y contiene todos los detalles de tu préstamo y del artículo."
+            keywords: ['boleta', 'contrato', 'terminos', 'ticket', 'perdi la boleta', 'extravio boleta', 'perdi mi contrato'],
+            response: "La **Boleta** es tu comprobante. Si la perdiste, ¡no te preocupes! Acude a la sucursal con tu identificación oficial (INE) para tramitar una reposición o realizar tus pagos. Es vital que seas el titular."
         },
         "cat": {
             keywords: ['cat', 'costo anual total', 'tasa real', 'interes'],
@@ -102,12 +102,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // --- 5. Autoempeño y Vehículos ---
         "autoempeño": {
-            keywords: ['auto', 'coche', 'vehiculo', 'camioneta', 'requisitos auto', 'dejar coche'],
-            response: "Para el auto empeño, necesitamos la factura original, tarjeta de circulación, identificación, y que el vehículo esté libre de gravamen. La valuación incluye una revisión física y mecánica."
+            keywords: ['auto', 'coche', 'vehiculo', 'camioneta', 'requisitos auto', 'dejar coche', 'empeñar auto', 'empenar coche', 'mi auto', 'mi carro', 'papeles auto', 'factura'],
+            response: "Para **Auto Empeño Luna**: Factura original, tarjeta de circulación vigente, pagos al corriente (tenencia/verificación), duplicado de llaves e INE. El auto debe ser modelo 2013 en adelante (aprox)."
         },
         "uso_coche": {
-            keywords: ['uso el coche', 'manejar mi auto', 'sin resguardo', 'gps', 'me lo quedo'],
-            response: "Tenemos la opción de **'Auto Empeño sin Resguardo'** (Sigue Usándolo). El vehículo debe ser de modelo reciente, pasar una revisión más estricta, y se requiere instalar un GPS de monitoreo."
+            keywords: ['uso el coche', 'manejar mi auto', 'sin resguardo', 'gps', 'me lo quedo', 'seguir manejando'],
+            response: "Tenemos la opción de **'Auto Empeño Luna sin Resguardo'** (Sigue Usándolo). El vehículo debe ser de modelo reciente, pasar una revisión más estricta, y se requiere instalar un GPS de monitoreo."
         },
         "moto": {
             keywords: ['moto', 'motocicleta', 'cuatrimoto'],
@@ -120,12 +120,12 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // --- 6. Joyería y Electrónicos ---
         "joyeria": {
-            keywords: ['joya', 'oro', 'plata', 'kilataje', 'diamante', 'espectrometro'],
-            response: "Aceptamos oro (10K, 14K, 18K, 24K), plata y diamantes. La valuación se realiza con un **espectrómetro** (equipo de alta precisión) para determinar pureza."
+            keywords: ['joya', 'oro', 'plata', 'kilataje', 'diamante', 'espectrometro', 'empeñar oro', 'empenar joyas', 'anillo', 'collar', 'cadena', 'esclava', 'centenario', '14k', '10k', 'pedaceria', 'aretes', 'dije'],
+            response: "Somos expertos en **Joyería**. Aceptamos oro de cualquier kilataje (incluso pedacería), plata y diamantes. Usamos tecnología de Rayos X para darte el pago más justo por la pureza real de tu pieza."
         },
         "electronicos": {
-            keywords: ['electronico', 'celular', 'tablet', 'laptop', 'macbook', 'ipad', 'imei', 'falla electronico', 'pantalla rota'],
-            response: "Aceptamos electrónicos recientes (menos de 3 años). Requisitos: cargador original, funcionamiento óptimo, sin cuentas bloqueadas (iCloud, Google) y sin reporte de robo. No aceptamos electrónicos con fallas graves."
+            keywords: ['electronico', 'celular', 'tablet', 'laptop', 'macbook', 'ipad', 'imei', 'falla electronico', 'pantalla rota', 'empeñar celular', 'empenar laptop', 'iphone', 'samsung', 'xbox', 'playstation', 'nintendo', 'consola', 'smart tv', 'pantalla', 'bocina', 'camara'],
+            response: "En **Electrónicos** aceptamos: Celulares, Laptops, Tablets, Consolas, Pantallas (Smart TV), Cámaras y Equipos de Sonido. Deben funcionar correctamente y tener sus accesorios básicos (cargador)."
         },
         
         // --- 7. General ---
@@ -138,12 +138,30 @@ document.addEventListener('DOMContentLoaded', () => {
             response: "Requerimos identificación oficial vigente del titular (INE, Pasaporte). Para trámites por un tercero, es indispensable una Carta Poder Simple."
         },
         "regulacion": {
-            keywords: ['profeco', 'regulacion', 'normas', 'queja', 'derechos del cliente', 'aviso de privacidad'],
+            keywords: ['profeco', 'regulacion', 'legal', 'queja', 'derechos', 'contrato registrado'],
             response: "Estamos regulados y operamos bajo las normativas de la ley mexicana y las disposiciones de la **PROFECO**. Para quejas, llama a la línea de Servicio al Cliente **664 589 7356**."
         },
+        "intereses": {
+            keywords: ['interes', 'tasa', 'cobran', 'porcentaje', 'cuanto pago', 'comision', 'mensualidad'],
+            response: "Nuestra tasa de interés es competitiva y se ajusta al mercado. El costo total depende del monto prestado y el plazo elegido. En tu valoración te explicaremos exactamente cuánto pagarás antes de firmar."
+        },
         "contacto_horario": {
-            keywords: ['horario', 'sucursal', 'donde estan', 'ubicacion', 'telefono', 'whatsapp', 'contacto'],
-            response: "Nuestro horario es de Lunes a Domingo de 9:00 a.m. a 8:30 p.m. Para ubicaciones exactas y contacto, llama directamente al **664 589 7356**."
+            keywords: ['horario', 'sucursal', 'donde estan', 'ubicacion', 'telefono', 'whatsapp', 'contacto', 'direccion', 'abierto', 'cerrado'],
+            response: "Nuestro horario es de Lunes a Domingo de 9:00 a.m. a 8:30 p.m. Puedes ver el mapa en la sección de **Contacto** o llamar al **664 589 7356** para ubicar tu sucursal más cercana."
+        },
+
+        // --- 8. Interacción Social (NUEVO) ---
+        "saludos": {
+            keywords: ['hola', 'buenos dias', 'buenas tardes', 'buenas noches', 'que tal', 'hi', 'hello', 'oiga', 'disculpe'],
+            response: "¡Hola! 👋 Soy tu asistente virtual inteligente. Estoy aquí para resolver tus dudas sobre **préstamos**, **refrendos** y **artículos** que aceptamos. ¿En qué puedo ayudarte hoy?"
+        },
+        "agradecimiento": {
+            keywords: ['gracias', 'muchas gracias', 'te agradezco', 'ok gracias', 'vale gracias', 'muy amable'],
+            response: "¡De nada! Es un placer ayudarte. 😊 Recuerda que en **Empeños** estamos para servirte. Si tienes otra duda, aquí sigo."
+        },
+        "despedida": {
+            keywords: ['adios', 'bye', 'hasta luego', 'nos vemos', 'ya me voy'],
+            response: "¡Hasta luego! Que tengas un excelente día. Recuerda que tu tranquilidad financiera es nuestra prioridad."
         }
     };
 
@@ -153,8 +171,14 @@ document.addEventListener('DOMContentLoaded', () => {
      * @returns {string} - La respuesta de la IA o el mensaje de fallback.
      */
     function getIaResponse(question) {
-        // Normaliza el input y lo divide en tokens (palabras)
-        const lowerQuestion = question.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        // 1. Normalización avanzada: minúsculas, sin acentos, sin puntuación extraña
+        const cleanQuestion = question.toLowerCase()
+                                      .normalize("NFD")
+                                      .replace(/[\u0300-\u036f]/g, "")
+                                      .replace(/[^\w\s]/g, " "); // Reemplazar signos por espacios
+        
+        // Tokenizamos la pregunta para búsquedas de palabras exactas
+        const questionWords = cleanQuestion.split(/\s+/);
         
         let bestMatchTopic = null;
         let maxScore = 0;
@@ -166,9 +190,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Comprueba cuántas palabras clave del tema están presentes en la pregunta
             topic.keywords.forEach(keyword => {
-                // Si la pregunta contiene la palabra clave, suma un punto
-                if (lowerQuestion.includes(keyword)) {
-                    currentScore++;
+                const cleanKeyword = keyword.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                
+                // Lógica mejorada: Frases valen MUCHO más (10 pts) para asegurar prioridad
+                if (cleanKeyword.includes(" ") && cleanQuestion.includes(cleanKeyword)) {
+                    currentScore += 10; 
+                } else if (questionWords.includes(cleanKeyword)) {
+                    currentScore += 1;
                 }
             });
 
@@ -204,7 +232,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         setTimeout(() => {
             const answer = getIaResponse(question);
-            responseText.innerHTML = answer;
+            
+            // --- FORMATEO DE TEXTO (Estilo) ---
+            // Convierte **texto** en HTML con clase para estilo
+            let formattedAnswer = answer.replace(/\*\*(.*?)\*\*/g, '<span class="ia-highlight">$1</span>');
+            
+            responseText.innerHTML = formattedAnswer;
             button.disabled = false;
         }, 1500); // Espera de 1.5 segundos
     }
